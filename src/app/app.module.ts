@@ -1,20 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import 'hammerjs';
 
-import { AppComponent } from './app.component';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {MaterialModule} from '@angular/material';
+import {Material2AppAppComponent, DialogContent} from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    MaterialModule.forRoot(),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [Material2AppAppComponent, DialogContent],
+  entryComponents: [DialogContent],
+  bootstrap: [Material2AppAppComponent],
 })
 export class AppModule { }
