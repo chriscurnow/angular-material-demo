@@ -16,6 +16,11 @@
 .settings/
 .editorconfig
 
+# Firebase 
+.firebaserc
+database.rules.json
+firebase.json
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
