@@ -1,9 +1,9 @@
 import 'hammerjs';
 
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {MaterialModule} from '@angular/material';
-import {Material2AppAppComponent, DialogContentComponent} from './app.component';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { MaterialModule } from '@angular/material';
+import { Material2AppAppComponent, DialogContentComponent } from './app.component';
 
 @NgModule({
   imports: [
