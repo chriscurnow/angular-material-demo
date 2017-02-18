@@ -1,7 +1,7 @@
 Angular Material Demo
 =============
 NOTE: This is an updated version of the original code, https://github.com/jelbourn/material2-app
-Please check the package.json file for what's updated.
+Please check the package.json & CHANGELOG.md file for what's updated.
 See it live: https://angular-material-demo.firebaseapp.com/
 
 # Installation

@@ -1,5 +1,7 @@
 ## Update 02/16/2017
-Updated to `@angular/cli@1.0.0-beta.32`
+- Updated to `@angular/cli@1.0.0-beta.32`
+- Added CHANGELOG.md 
+
 Please check the following link for any breaking changes
 https://github.com/angular/angular-cli/blob/master/CHANGELOG.md#100-beta32-2017-02-17
 
