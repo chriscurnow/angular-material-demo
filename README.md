@@ -1,6 +1,7 @@
 Angular Material Demo
 =============
-![](https://david-dm.org/demirk4n/angular-material-demo.svg)
+[![Dependencies Status](https://david-dm.org/demirk4n/angular-material-demo.svg)](https://david-dm.org/demirk4n/angular-material-demo)
+[![devDependencies Status](https://david-dm.org/demirk4n/angular-material-demo/dev-status.svg)](https://david-dm.org/demirk4n/angular-material-demo?type=dev)
 ![](https://api.travis-ci.org/demirk4n/angular-material-demo.svg?branch=master)
 
 NOTE: This is an updated version of the original code, https://github.com/jelbourn/material2-app
