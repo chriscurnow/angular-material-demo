@@ -1,5 +1,7 @@
 Angular Material Demo
 =============
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/demirk4n/angular-material-demo.svg)](https://greenkeeper.io/)
 [![Dependencies Status](https://david-dm.org/demirk4n/angular-material-demo.svg)](https://david-dm.org/demirk4n/angular-material-demo)
 [![devDependencies Status](https://david-dm.org/demirk4n/angular-material-demo/dev-status.svg)](https://david-dm.org/demirk4n/angular-material-demo?type=dev)
 ![](https://api.travis-ci.org/demirk4n/angular-material-demo.svg?branch=master)
