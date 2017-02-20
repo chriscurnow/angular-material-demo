@@ -6,6 +6,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { MaterialModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 
@@ -20,7 +21,7 @@ describe('AppComponent (template)', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AppComponent], // declare the test component
-      imports: [MaterialModule]
+      imports: [MaterialModule, FormsModule]
     }).compileComponents();
   }));
   // 2nd beforeEach synchronous
@@ -30,7 +31,7 @@ describe('AppComponent (template)', () => {
     comp = fixture.componentInstance; // AppComponent test instance
 
     // query for the title <h1> by CSS element selector
-    de = fixture.debugElement.query(By.css('md-toolbar'));
+    de = fixture.debugElement.query(By.css('md-toolbar.title'));
     el = de.nativeElement;
   });
   it('should create component', () => expect(comp).toBeDefined());

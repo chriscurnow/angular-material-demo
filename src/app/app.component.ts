@@ -17,7 +17,44 @@ export class AppComponent {
     { name: 'French fries', rating: 'Pretty good' },
   ];
 
-  progress = 0;
+  private selectedValue: string;
+
+  private games = [
+    {value: 'rts-0', viewValue: 'Starcraft'},
+    {value: 'rpg-1', viewValue: 'Baldur\'s Gate'},
+    {value: 'fps-2', viewValue: 'Doom'}
+  ];
+
+  private progress = 0;
+  private slider = {
+    'autoTicks': false,
+    'disabled': false,
+    'invert': false,
+    'max': 100,
+    'min': 0,
+    'showTicks': false,
+    'step': 1,
+    'thumbLabel': false,
+    'value': 0,
+    'vertical': false,
+    'tickInterval': 1,
+    'checked': true
+  };
+  private tiles = [
+    { text: 'One', cols: 3, rows: 1, color: 'lightblue' },
+    { text: 'Two', cols: 1, rows: 2, color: 'lightgreen' },
+    { text: 'Three', cols: 1, rows: 1, color: 'lightpink' },
+    { text: 'Four', cols: 2, rows: 1, color: '#DDBDF1' },
+  ];
+
+  private color: string;
+
+  private availableColors = [
+    { name: 'none', color: '' },
+    { name: 'Primary', color: 'primary' },
+    { name: 'Accent', color: 'accent' },
+    { name: 'Warn', color: 'warn' }
+  ];
 
   constructor(private _dialog: MdDialog, private _snackbar: MdSnackBar) {
     // Update the value for the progress-bar on an interval.
@@ -36,6 +73,12 @@ export class AppComponent {
 
   showSnackbar() {
     this._snackbar.open('YUM SNACKS', 'CHEW');
+  }
+  get tickInterval(): number | 'auto' {
+    return this.slider.showTicks ? (this.slider.autoTicks ? 'auto' : this.slider.tickInterval) : null;
+  }
+  set tickInterval(v) {
+    this.slider.tickInterval = Number(v);
   }
 }
 

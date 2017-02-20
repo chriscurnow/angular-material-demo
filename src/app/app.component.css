@@ -11,8 +11,7 @@ md-sidenav-container.m2app-dark {
 }
 
 .app-sidenav {
-  padding: 10px;
-  min-width: 100px;
+  min-width: 200px;
 }
 
 .app-content md-checkbox {
@@ -70,4 +69,40 @@ md-sidenav-container.m2app-dark {
 
 .app-progress {
   margin: 20px;
+}
+
+.example-h2 {
+  margin: 10px 0;
+  color: rgba(0,0,0,.54);
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 10px;
+}
+
+.mat-slider-horizontal {
+  width: 300px;
+}
+
+.mat-slider-vertical {
+  height: 300px;
+}
+
+md-chip {
+  max-width: 200px;
+}
+
+.app-sidebar-button {
+  width: inherit;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
 }
