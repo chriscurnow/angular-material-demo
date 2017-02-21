@@ -31,15 +31,15 @@ describe('AppComponent (template)', () => {
     comp = fixture.componentInstance; // AppComponent test instance
 
     // query for the title <h1> by CSS element selector
-    de = fixture.debugElement.query(By.css('md-toolbar.title'));
+    de = fixture.debugElement.query(By.css('span.title'));
     el = de.nativeElement;
   });
   it('should create component', () => expect(comp).toBeDefined());
 
-  it('should have expected <md-toolbar> material component', () => {
+  it('should have expected <span class="title"> material component', () => {
     fixture.detectChanges();
-    const md_toolbar = de.nativeElement;
-    expect(md_toolbar.innerText).toMatch('Angular Material Demo Application',
-      '<md-toolbar> should say "Angular Material Demo Application"');
+    const t_de = de.nativeElement;
+    expect(t_de.innerText).toMatch('Angular Material Demo',
+      '<span class="title"> should say "Angular Material Demo"');
   });
 });
