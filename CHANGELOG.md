@@ -1,3 +1,6 @@
+## Update 02/23/2017
+- Updated to `typescript@2.2.1`
+
 ## Update 02/16/2017
 - Updated to `@angular/cli@1.0.0-beta.32`
 - Added CHANGELOG.md 
